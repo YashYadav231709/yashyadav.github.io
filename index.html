@@ -3,25 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        h1 {
-            color: white;
-            font-size: 3rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-    </style>
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">YY</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm <span class="highlight">Your Name</span></h1>
+            <p class="hero-subtitle">Software Developer | Audio Processing | Machine Learning</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate developer specializing in audio processing, machine learning, and building scalable systems. With experience in Docker, Python, and modern web technologies, I love creating solutions that make a difference.</p>
+                    <p>Currently working with Dagster pipelines, Whisper API, and HuggingFace models to build cutting-edge audio transcription and summarization systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">🎙️</div>
+                    <h3>Audio Processing Pipeline</h3>
+                    <p>Built a scalable audio transcription and summarization pipeline using Dagster, Whisper API, and HuggingFace transformers.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">ML</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-icon">🤖</div>
+                    <h3>AI Summarization System</h3>
+                    <p>Developed an ensemble model approach for generating structured summaries with key moments and outlines.</p>
+                    <div class="project-tags">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Transformers</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-icon">🗄️</div>
+                    <h3>Data Infrastructure</h3>
+                    <p>Architected storage solutions with MinIO and PostgreSQL for efficient data management and retrieval.</p>
+                    <div class="project-tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MinIO</span>
+                        <span class="tag">API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">HTML/CSS</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Technologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Dagster</span>
+                        <span class="skill-item">PyTorch</span>
+                        <span class="skill-item">PostgreSQL</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Portainer</span>
+                        <span class="skill-item">MinIO</span>
+                        <span class="skill-item">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-text">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+            <div class="contact-buttons">
+                <a href="mailto:your.email@example.com" class="btn btn-primary">Email Me</a>
+                <a href="https://github.com/yashyadav" class="btn btn-secondary" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" class="btn btn-secondary" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
